@@ -28,6 +28,48 @@ $mainTitle:#191919;
     font-weight: 500;
 }
 
+%title-catalog {
+    padding-bottom: 35px;
+    text-align: center;
+    font-size: 36px;
+    line-height: 38px;
+    @extend %dmsans-700;
+}
+
+%filter-btn-catalog {
+    display: flex;
+    justify-content: center;   
+}
+
+%btn-catalog {    
+    color: #8b8b8b;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 18px;
+    border: none;
+    @extend %dmsans-700;
+    outline: none;
+    cursor: pointer;
+
+}
+
+
+%subtitle-catalog {
+    font-size: 16px;
+    line-height: 18px;
+    @extend %dmsans-500;
+    color: #243f4d;
+}
+
+%text-catalog {
+    font-size: 16px;
+    line-height: 18px;
+    color: #a3bbc8;
+    @extend %dmsans-700;
+}
+
+
+
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
 }
