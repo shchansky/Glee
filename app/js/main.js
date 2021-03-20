@@ -6,7 +6,7 @@ $(function () {
         autoplaySpeed: 2000,
     })
 
-
+    var mix = mixitup('.products__content');
     var mixer = mixitup('.new__content');
 
 });
