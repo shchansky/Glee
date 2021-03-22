@@ -605,9 +605,12 @@
     &__item-author {
         color: #222933;
         display: inline-block;
-        margin-right: 30px;
+        margin-left: 30px;
     }
+}
 
+    .insights-terms {
+    padding-top: 60px;
 }
 
 .partners {
@@ -620,6 +623,59 @@
     }
 }
 
+
+
+.top {
+    &__inner {
+        padding: 32px 0;
+        background-color: #edf1f4;
+        text-align: center;
+    }
+    &__title {
+        font-size: 36px;
+        color: #222933;
+        @extend %rubik-400;
+        margin-bottom: 20px
+    }
+    
+    .information__list,
+    .information__box {
+        @extend %rubik-400;
+        font-size: 16px;
+        color: #243f4d;
+        line-height: 30px;
+    }
+
+    .information__list {
+        padding-top: 120px;
+    }
+    .information__title {
+        @extend %rubik-500;
+        font-size: 24px;
+        line-height: 40px;
+        padding-bottom: 20px;
+    }
+
+    .infotmation__items {
+        list-style: none;
+        counter-reset: number;
+        padding-bottom: 40px;       
+    }
+    .infotmation__item {
+        padding-left: 40px;
+        margin-bottom: 20px;
+        position: relative;
+        &::before {
+        content: '0' counter(number)'.';
+        counter-increment: number;
+        position: absolute;
+        left: 0px;
+        }
+    }
+    .information__box-text {
+        padding-bottom: 55px;
+    }
+}
 
 
 

@@ -23,3 +23,33 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+
+.breadcrumbs {
+ 
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    padding-right: 12px;
+    margin-right: 7px;
+    @extend %rubik-400;
+    color: #8b8b8b;
+    position: relative;
+    &::after {
+      content: "/";
+      position: absolute;
+      right: 0;
+    }
+    &:last-child {
+      padding-right: 0px;
+      margin-right: 0;
+      &::after{
+        content: "";
+      }
+    }
+  }
+  &__link {   
+    color: inherit;
+  }
+}
