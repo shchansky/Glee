@@ -53,3 +53,48 @@ body {
     color: inherit;
   }
 }
+
+.pagination {
+  padding-bottom: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  @extend %rubik-400;
+  font-size: 16px;
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item + .pagination__item {
+    margin-left: 17px;
+  }
+  &__item {
+    display: inline-block;    
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 48px;
+    height: 48px;
+    border: 1px solid #a3bbc8;
+    color: #243f4d;
+  }
+  &__link--active {
+    border-color: #a3bbc8;
+    background-color: #a3bbc8;
+    color: #fff;
+  }
+  &__next {
+    min-width: 70px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #a3bbc8;
+    margin-left: 17px;
+    color: #243f4d;
+  }
+}
