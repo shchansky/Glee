@@ -14,14 +14,18 @@
 </head>
 
 <body>
-
     <header class="header">
         <div class="wrapper">
             <div class="header__inner">
-                <a class="logo" href="#">
-                    <img class="logo__img" src="images/logo.png" alt="logo">
-                    <span class="logo__text">Glee.</span>
-                </a>
+                <div class="logo__inner">
+                    <button class="menu__btn">
+                        <span></span>
+                    </button>
+                    <a class="logo" href="#">
+                        <img class="logo__img" src="images/logo.png" alt="logo">
+                        <span class="logo__text">Glee.</span>
+                    </a>
+                </div>
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__list-item">
@@ -65,10 +69,6 @@
             </div>
         </div>
     </header>
-
-
-
-
     <main class="main">
         <section class="top">
             <div class="top__inner">
@@ -90,8 +90,6 @@
                 </div>
             </div>
         </section>
-
-
         <section class="blog-page blog-details">
             <div class="container">
                 <div class="blog-page__inner">
@@ -143,6 +141,19 @@
                             ex ea commodo
                         </p>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
                         <div class="blog-details__author blog-author">
                             <div class="blog-author__inner">
                                 <div class="blog-author__info">
@@ -180,11 +191,11 @@
                         </div>
 
 
+                         
                         <div class="comments__title">
                             3 Comments
                         </div>
                         <div class="comments">
-
                             <div class="comments__item">
                                 <img src="images/blog/comment-author-1.jpg" alt="comments author" class="comments__img">
                                 <div class="comments__info">
@@ -231,6 +242,9 @@
                                 </div>
                             </div>
                         </div>
+
+
+                        
                         <form class="comments-form" action="#">
                             <p class="comments-form__title">
                                 Leave A Comment
@@ -249,8 +263,29 @@
                             </div>
                             <button class="comments-form__btn">POST COMMENT</button>
                         </form>
-                    </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
                     <div class="blog-page__aside">
                         <form class="blog-page__search-form" action="#">
                             <input type="text" class="blog__search-input">
@@ -263,33 +298,33 @@
                             <form class="filter-category__form" action="#">
                                 <label class="filter-category__label">
                                     <input class="filter-category__input" type="checkbox">
-                                    <div class="filter-category__checkbox">
+                                    <span class="filter-category__checkbox">
                                         <span>Chair</span>
-                                    </div>
+                                    </span>
                                 </label>
                                 <label class="filter-category__label">
                                     <input class="filter-category__input" type="checkbox">
-                                    <div class="filter-category__checkbox">
+                                    <span class="filter-category__checkbox">
                                         <span>Table</span>
-                                    </div>
+                                    </span>
                                 </label>
                                 <label class="filter-category__label">
                                     <input class="filter-category__input" type="checkbox">
-                                    <div class="filter-category__checkbox">
+                                    <span class="filter-category__checkbox">
                                         <span>Lamp</span>
-                                    </div>
+                                    </span>
                                 </label>
                                 <label class="filter-category__label">
                                     <input class="filter-category__input" type="checkbox">
-                                    <div class="filter-category__checkbox">
+                                    <span class="filter-category__checkbox">
                                         <span>Watch</span>
-                                    </div>
+                                    </span>
                                 </label>
                                 <label class="filter-category__label">
                                     <input class="filter-category__input" type="checkbox">
-                                    <div class="filter-category__checkbox">
+                                    <span class="filter-category__checkbox">
                                         <span>Clock</span>
-                                    </div>
+                                    </span>
                                 </label>
                             </form>
                         </div>
@@ -347,7 +382,6 @@
                                     </span>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -383,7 +417,7 @@
                         <img class="logo__img" src="images/logo.png" alt="logo">
                         <span class="logo__text">Glee.</span>
                     </a>
-                    <a class="footer-top__address" href="#">ADDRESS: 4772 Wines Lane Houston, TX 77032
+                    <a class="footer-top__address" href="#">ADDRESS: 4772 Wines Lane <br> Houston, TX 77032
                     </a>
                     <a class="footer-top__phone" href="tel:+8323475843">Telephone:+832-347-5843
                     </a>
@@ -467,7 +501,7 @@
             </ul>
         </div>
     </div>
-<script src="js/main.min.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>

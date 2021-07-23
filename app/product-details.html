@@ -14,14 +14,18 @@
 </head>
 
 <body>
-
     <header class="header">
         <div class="wrapper">
             <div class="header__inner">
-                <a class="logo" href="#">
-                    <img class="logo__img" src="images/logo.png" alt="logo">
-                    <span class="logo__text">Glee.</span>
-                </a>
+                <div class="logo__inner">
+                    <button class="menu__btn">
+                        <span></span>
+                    </button>
+                    <a class="logo" href="#">
+                        <img class="logo__img" src="images/logo.png" alt="logo">
+                        <span class="logo__text">Glee.</span>
+                    </a>
+                </div>
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__list-item">
@@ -65,9 +69,7 @@
             </div>
         </div>
     </header>
-
     <main class="main">
-
         <section class="top">
             <div class="top__inner">
                 <h2 class="top__title">
@@ -85,9 +87,6 @@
                 </div>
             </div>
         </section>
-
-
-
         <section class="merchandise-page">
             <div class="container">
                 <div class="merchandise">
@@ -119,8 +118,6 @@
                                 </div>
                             </div>
                         </div>
-
-
                         <div class="merchandise__content">
                             <h2 class="merchandise__title">Pendant lamp</h2>
                             <div class="merchandise__item-star">
@@ -170,11 +167,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
-
                 <div class="merchandise-tabs">
                     <div class="merchandise-tabs__top">
                         <a class="merchandise-tabs__top-item merchandise-tabs__top-item--active"
@@ -204,8 +196,7 @@
                 </div>
             </div>
         </section>
-
-        <section class="related">
+         <section class="related">
             <div class="container">
                 <h3 class="related__title">Related products</h3>
                 <div class="related__slider">
@@ -490,71 +481,78 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-
-
-
-
-        <section class="insights insights-terms">
+        </section> 
+        <section class="articles articles-terms">
             <div class="container">
-                <h3 class="insights__title">
-                    Our Insights & Articles
-                </h3>
-                <div class="insights__link-box">
-                    <a href="" class="insights__link">
+                <div class="articles__title-box">
+                    <h3 class="articles__title">
+                        Our Insights & Articles
+                    </h3>
+                    <a class="articles__title-link" href="#">
                         View All
                     </a>
                 </div>
             </div>
-            <div class="insights__imglink-box">
-                <a class="insights__imglink" href="#">
-                    <img class="insights__img" src="images/insights/1.jpg" alt="insights images">
-                </a>
-                <a class="insights__imglink" href="#">
-                    <img class="insights__img" src="images/insights/2.jpg" alt="insights images">
-                </a>
-                <a class="insights__imglink" href="#">
-                    <img class="insights__img" src="images/insights/3.jpg" alt="insights images">
-                </a>
-            </div>
-            <div class="insights__item-box">
-                <div class="insights__item">
-                    <a class="insights__subtitle-link" href="#">
-                        <h5 class="insights__subtitle">
-                            Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                        </h5>
-                    </a>
-                    <div class="insights__item-info">
-                        <span class="insights__item-date">28 JANUARY, 2020</span>
-                        <a class="insights__item-author" href="#">BY ADMIN</a>
+            <div class="articles__inner">
+                <div class="container">
+                    <div class="articles-items">
+                        <div class="articles-item">
+                            <a class="articles-item__img-link" href="#">
+                                <img class="articles-item__img" src="images/insights/1.jpg" alt="insights images">
+                            </a>
+                            <div class="articles-item__info">
+                                <a class="articles-item__info-link" href="#">
+                                    <h5 class="articles-item__info-subtitle">
+                                        Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore
+                                    </h5>
+                                </a>
+                                <div class="articles-item__info-box">
+                                    <span class="articles-item__info-date">28 JANUARY, 2020</span>
+                                    <a class="articles-item__info-author" href="#">BY ADMIN</a>
+                                </div>
+                                <span class="articles-item__info-logo">NEWS</span>
+                            </div>
+                        </div>
+                        <div class="articles-item">
+                            <a class="articles-item__img-link" href="#">
+                                <img class="articles-item__img" src="images/insights/2.jpg" alt="insights images">
+                            </a>
+                            <div class="articles-item__info">
+                                <a class="articles-item__info-link" href="#">
+                                    <h5 class="articles-item__info-subtitle">
+                                        Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore
+                                    </h5>
+                                </a>
+                                <div class="articles-item__info-box">
+                                    <span class="articles-item__info-date">28 JANUARY, 2020</span>
+                                    <a class="articles-item__info-author" href="#">BY ADMIN</a>
+                                </div>
+                                <span class="articles-item__info-logo">NEWS</span>
+                            </div>
+                        </div>
+                        <div class="articles-item">
+                            <a class="articles-item__img-link" href="#">
+                                <img class="articles-item__img" src="images/insights/3.jpg" alt="insights images">
+                            </a>
+                            <div class="articles-item__info">
+                                <a class="articles-item__info-link" href="#">
+                                    <h5 class="articles-item__info-subtitle">
+                                        Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore
+                                    </h5>
+                                </a>
+                                <div class="articles-item__info-box">
+                                    <span class="articles-item__info-date">28 JANUARY, 2020</span>
+                                    <a class="articles-item__info-author" href="#">BY ADMIN</a>
+                                </div>
+                                <span class="articles-item__info-logo">NEWS</span>
+                            </div>
+                        </div>
                     </div>
-                    <span class="insights__item-logo">NEWS</span>
                 </div>
-                <div class="insights__item">
-                    <a class="insights__subtitle-link" href="#">
-                        <h5 class="insights__subtitle">
-                            Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                        </h5>
-                    </a>
-                    <div class="insights__item-info">
-                        <span class="insights__item-date">28 JANUARY, 2020</span>
-                        <a class="insights__item-author" href="#">BY ADMIN</a>
-                    </div>
-                    <span class="insights__item-logo">NEWS</span>
-                </div>
-                <div class="insights__item">
-                    <a class="insights__subtitle-link" href="#">
-                        <h5 class="insights__subtitle">
-                            Rncididunt ut labore et dolore magna aliqua. Ut enim
-                        </h5>
-                    </a>
-                    <div class="insights__item-info">
-                        <span class="insights__item-date">28 JANUARY, 2020</span>
-                        <a class="insights__item-author" href="#">BY ADMIN</a>
-                    </div>
-                    <span class="insights__item-logo">NEWS</span>
-                </div>
+                <span class="articles__inner-decor"></span>
             </div>
             <div class="partners">
                 <div class="container">
@@ -587,7 +585,7 @@
                         <img class="logo__img" src="images/logo.png" alt="logo">
                         <span class="logo__text">Glee.</span>
                     </a>
-                    <a class="footer-top__address" href="#">ADDRESS: 4772 Wines Lane Houston, TX 77032
+                    <a class="footer-top__address" href="#">ADDRESS: 4772 Wines Lane <br> Houston, TX 77032
                     </a>
                     <a class="footer-top__phone" href="tel:+8323475843">Telephone:+832-347-5843
                     </a>
@@ -671,16 +669,6 @@
             </ul>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
     <script src="js/main.min.js"></script>
 </body>
 

@@ -1,4 +1,14 @@
 $(function () {
+  $('.menu__btn').on ('click', function(){
+    $('.menu__list').toggleClass('menu__list--active')
+  })
+
+
+  $('.footer-top__title').on ('click', function(){
+    $(this).next().slideToggle();
+    $(this).toggleClass('active');
+  })
+
 
   $('.related__slider').slick ({
     slidesToShow: 4,
@@ -7,6 +17,28 @@ $(function () {
     prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/arrow-left.svg" alt=""></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="images/icons/arrow-right.svg" alt=""></button>',
     infinite:false,
+    responsive: [
+      {
+        breakpoint: 1231,
+        settings: {
+          slidesToShow: 3,
+        }
+      },  
+
+      {
+        breakpoint: 901,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+
+      {
+        breakpoint: 651,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+    ]
 
 })
 
@@ -43,6 +75,14 @@ $(function () {
     asNavFor: '.merchandise-slide__thumb',
     draggable: false,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 1231,
+        settings: {
+          draggable: true,
+        }
+      },  
+    ]
   });
 
 
